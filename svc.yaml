@@ -7,8 +7,9 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 8118
-      nodePort: 30002
+    - port: 18118
+      nodePort: 30118
+      targetPort: 8118
       protocol: TCP
   # just like the selector in the replication controller,
   # but this time it identifies the set of pods to load balance
